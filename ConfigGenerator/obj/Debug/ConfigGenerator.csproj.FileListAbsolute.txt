@@ -1,0 +1,45 @@
+C:\Users\Police\Documents\Visual Studio 2017\Projects\ConfigGenerator\ConfigGenerator\bin\Debug\ConfigGenerator.exe.config
+C:\Users\Police\Documents\Visual Studio 2017\Projects\ConfigGenerator\ConfigGenerator\bin\Debug\ConfigGenerator.exe
+C:\Users\Police\Documents\Visual Studio 2017\Projects\ConfigGenerator\ConfigGenerator\bin\Debug\ConfigGenerator.pdb
+C:\Users\Police\Documents\Visual Studio 2017\Projects\ConfigGenerator\ConfigGenerator\obj\Debug\ConfigGenerator.csprojResolveAssemblyReference.cache
+C:\Users\Police\Documents\Visual Studio 2017\Projects\ConfigGenerator\ConfigGenerator\obj\Debug\MainWindow.g.cs
+C:\Users\Police\Documents\Visual Studio 2017\Projects\ConfigGenerator\ConfigGenerator\obj\Debug\App.g.cs
+C:\Users\Police\Documents\Visual Studio 2017\Projects\ConfigGenerator\ConfigGenerator\obj\Debug\ConfigGenerator_MarkupCompile.cache
+C:\Users\Police\Documents\Visual Studio 2017\Projects\ConfigGenerator\ConfigGenerator\obj\Debug\ConfigGenerator_MarkupCompile.lref
+C:\Users\Police\Documents\Visual Studio 2017\Projects\ConfigGenerator\ConfigGenerator\obj\Debug\MainWindow.baml
+C:\Users\Police\Documents\Visual Studio 2017\Projects\ConfigGenerator\ConfigGenerator\obj\Debug\ConfigGenerator.g.resources
+C:\Users\Police\Documents\Visual Studio 2017\Projects\ConfigGenerator\ConfigGenerator\obj\Debug\ConfigGenerator.Properties.Resources.resources
+C:\Users\Police\Documents\Visual Studio 2017\Projects\ConfigGenerator\ConfigGenerator\obj\Debug\ConfigGenerator.csproj.GenerateResource.Cache
+C:\Users\Police\Documents\Visual Studio 2017\Projects\ConfigGenerator\ConfigGenerator\obj\Debug\ConfigGenerator.csproj.CoreCompileInputs.cache
+C:\Users\Police\Documents\Visual Studio 2017\Projects\ConfigGenerator\ConfigGenerator\obj\Debug\ConfigGenerator.exe
+C:\Users\Police\Documents\Visual Studio 2017\Projects\ConfigGenerator\ConfigGenerator\obj\Debug\ConfigGenerator.pdb
+C:\dev\ConfigGenerator\ConfigGenerator\bin\Debug\ConfigGenerator.exe.config
+C:\dev\ConfigGenerator\ConfigGenerator\bin\Debug\ConfigGenerator.exe
+C:\dev\ConfigGenerator\ConfigGenerator\bin\Debug\ConfigGenerator.pdb
+C:\dev\ConfigGenerator\ConfigGenerator\obj\Debug\ConfigGenerator.csprojResolveAssemblyReference.cache
+C:\dev\ConfigGenerator\ConfigGenerator\obj\Debug\MainWindow.g.cs
+C:\dev\ConfigGenerator\ConfigGenerator\obj\Debug\App.g.cs
+C:\dev\ConfigGenerator\ConfigGenerator\obj\Debug\ConfigGenerator_MarkupCompile.cache
+C:\dev\ConfigGenerator\ConfigGenerator\obj\Debug\ConfigGenerator_MarkupCompile.lref
+C:\dev\ConfigGenerator\ConfigGenerator\obj\Debug\MainWindow.baml
+C:\dev\ConfigGenerator\ConfigGenerator\obj\Debug\ConfigGenerator.g.resources
+C:\dev\ConfigGenerator\ConfigGenerator\obj\Debug\ConfigGenerator.Properties.Resources.resources
+C:\dev\ConfigGenerator\ConfigGenerator\obj\Debug\ConfigGenerator.csproj.GenerateResource.Cache
+C:\dev\ConfigGenerator\ConfigGenerator\obj\Debug\ConfigGenerator.csproj.CoreCompileInputs.cache
+C:\dev\ConfigGenerator\ConfigGenerator\obj\Debug\ConfigGenerator.exe
+C:\dev\ConfigGenerator\ConfigGenerator\obj\Debug\ConfigGenerator.pdb
+C:\dev\WebDev\ConfigGenerator\ConfigGenerator\bin\Debug\ConfigGenerator.exe.config
+C:\dev\WebDev\ConfigGenerator\ConfigGenerator\bin\Debug\ConfigGenerator.exe
+C:\dev\WebDev\ConfigGenerator\ConfigGenerator\obj\Debug\ConfigGenerator.csprojAssemblyReference.cache
+C:\dev\WebDev\ConfigGenerator\ConfigGenerator\obj\Debug\MainWindow.g.cs
+C:\dev\WebDev\ConfigGenerator\ConfigGenerator\obj\Debug\App.g.cs
+C:\dev\WebDev\ConfigGenerator\ConfigGenerator\obj\Debug\ConfigGenerator_MarkupCompile.cache
+C:\dev\WebDev\ConfigGenerator\ConfigGenerator\obj\Debug\ConfigGenerator_MarkupCompile.lref
+C:\dev\WebDev\ConfigGenerator\ConfigGenerator\obj\Debug\MainWindow.baml
+C:\dev\WebDev\ConfigGenerator\ConfigGenerator\obj\Debug\ConfigGenerator.g.resources
+C:\dev\WebDev\ConfigGenerator\ConfigGenerator\obj\Debug\ConfigGenerator.Properties.Resources.resources
+C:\dev\WebDev\ConfigGenerator\ConfigGenerator\obj\Debug\ConfigGenerator.csproj.GenerateResource.cache
+C:\dev\WebDev\ConfigGenerator\ConfigGenerator\obj\Debug\ConfigGenerator.csproj.CoreCompileInputs.cache
+C:\dev\WebDev\ConfigGenerator\ConfigGenerator\obj\Debug\ConfigGenerator.exe
+C:\dev\WebDev\ConfigGenerator\ConfigGenerator\obj\Debug\ConfigGenerator.pdb
+C:\dev\WebDev\ConfigGenerator\ConfigGenerator\bin\Debug\ConfigGenerator.pdb
