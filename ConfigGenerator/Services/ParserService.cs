@@ -12,14 +12,14 @@ namespace ConfigGenerator.Services
             List<ProminObject> units = new List<ProminObject>();
             int prominObjectNumber = 0;
 
-            string[] parsedByGatesIniFile = iniFile.Split(Consts.gatesDivider, StringSplitOptions.RemoveEmptyEntries);
+            string[] parsedByGatesIniFile = iniFile.Split(Consts.Consts.prominObjectsDivider, StringSplitOptions.RemoveEmptyEntries);
 
             for (int gateIterator = 1; gateIterator < parsedByGatesIniFile.Length; gateIterator++)
             {
                 ProminObject prominObjectModel = new ProminObject();
 
                 string[] gateSplittedIntoProminObjects = splitByProminObjects(parsedByGatesIniFile[gateIterator]);
-                int gateNumber = getGateNumber(gateSplittedIntoProminObjects);
+                int gateNumber = GetGateNumber(gateSplittedIntoProminObjects);
 
                 for (int prominObjectIterator = 0; prominObjectIterator <= gateSplittedIntoProminObjects.Length;
                     prominObjectIterator++)
@@ -30,9 +30,9 @@ namespace ConfigGenerator.Services
 
                     if (parsedByGatesIniFile[1] == "ПСО")
                     {
-                        
+
                     }
-                    else if(parsedByGatesIniFile[1] == "Щит інженерний" || parsedByGatesIniFile[1] == "Щит ліфта")
+                    else if (parsedByGatesIniFile[1] == "Щит інженерний" || parsedByGatesIniFile[1] == "Щит ліфта")
                     {
                         gate = CreateProminObjectModel(gate, prominObjectIterator, prominObjectNumber, gateNumber);
                     }
@@ -46,7 +46,7 @@ namespace ConfigGenerator.Services
 
         private string[] splitByProminObjects(string gate)
         {
-            string[] gateParsedByProminObjects = gate.Split(Consts.prominObjectsDivider, StringSplitOptions.RemoveEmptyEntries);
+            string[] gateParsedByProminObjects = gate.Split(Consts.Consts.prominObjectsDivider, StringSplitOptions.RemoveEmptyEntries);
 
             return gateParsedByProminObjects;
         }
@@ -66,12 +66,17 @@ namespace ConfigGenerator.Services
             return prominObjectModel;
         }
 
-        public int getGateNumber(string[] gateSplittedIntoProminObjects)
+        public int GetGateNumber(string[] gateSplittedIntoProminObjects)
         {
             int gateNumber = Int32.Parse(gateSplittedIntoProminObjects[2]
-                .Split(Consts.gateNumberDivider, StringSplitOptions.RemoveEmptyEntries)[1]);
+                .Split(Consts.Consts.gateNumberDivider, StringSplitOptions.RemoveEmptyEntries)[1]);
 
             return gateNumber;
+        }
+
+        public static implicit operator ParserService(ReaderService v)
+        {
+            throw new NotImplementedException();
         }
     }
 }

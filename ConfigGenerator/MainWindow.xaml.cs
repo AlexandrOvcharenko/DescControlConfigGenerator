@@ -9,6 +9,8 @@ using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
 using ConfigGenerator.Services;
+using ConfigGenerator.infra;
+using Microsoft.Win32;
 
 namespace ConfigGenerator
 {
@@ -17,14 +19,39 @@ namespace ConfigGenerator
     /// </summary>
     public partial class MainWindow : Window
     {
-        private readonly XmlGeneratorService generator;
+        private XmlGeneratorService _generator { get; set; }
+        private string _iniFileContent { get; set; }
 
-        public MainWindow(/*Generator generator*/)
+        public MainWindow()
         {
             InitializeComponent();
-            ReaderService reader = new ReaderService();
-            ParserService parser = new ParserService();
-            generator = new XmlGeneratorService(reader, parser);
+            _generator = new XmlGeneratorService();
+            generateButton.IsEnabled = false;
+        }
+
+        public void GenerateConfigFiles(object sender, RoutedEventArgs e)
+        {
+            try
+            {
+                _generator.GenerateXmlDocument(_iniFileContent);
+            }
+            catch (Exception ex)
+            {
+                //TODO: add logic for handling errors: Logger, etc.
+            }
+        }
+
+        private void OpenFile(object sender, RoutedEventArgs e)
+        {
+            OpenFileDialog openFileDialog = new OpenFileDialog();
+            openFileDialog.Filter = "Ini files (*.ini)|*.ini";
+
+            if (openFileDialog.ShowDialog() == true)
+            {
+                openFileTextBox.Text = openFileDialog.FileName;
+                _iniFileContent = openFileTextBox.Text;
+                generateButton.IsEnabled = true;
+            }
         }
 
         private void TextBox_TextChanged(object sender, TextChangedEventArgs e)
@@ -32,17 +59,9 @@ namespace ConfigGenerator
 
         }
 
-        private void Button_Click(object sender, RoutedEventArgs e)
+        private void openFileTextBox1_TextChanged(object sender, TextChangedEventArgs e)
         {
-            try
-            {
-                generator.GenerateXmlDocument();
-            }
 
-            catch
-            {
-                //TODO: add logic for handling errors: Logger, etc.
-            }
         }
     }
 }

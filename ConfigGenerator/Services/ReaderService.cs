@@ -6,16 +6,16 @@ namespace ConfigGenerator.Services
     {
         private string IniFile { get; set; }
 
-        public string GetIniFileAsString ()
+        public string GetIniFileAsString(string iniFilePath)
         {
-            StreamReader streamReader = File.OpenText("Entries.txt");
+            var a = new StreamReader(iniFilePath, System.Text.Encoding.GetEncoding(1251));
 
-            while (!streamReader.EndOfStream)
+            while (!a.EndOfStream)
             {
-                IniFile = streamReader.ReadToEnd();
+                IniFile = a.ReadToEnd();
             }
 
-            streamReader.Close();
+            a.Close();
 
             return IniFile;
         }

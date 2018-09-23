@@ -99,5 +99,11 @@
       <SubType>Designer</SubType>
     </None>
   </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Background.jpg" />
+    <Resource Include="Resources\Background2.jpg" />
+    <Resource Include="Resources\Background3.jpg" />
+    <Resource Include="Resources\Background4.jpg" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

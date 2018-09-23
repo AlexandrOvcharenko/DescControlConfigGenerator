@@ -6,10 +6,37 @@
         xmlns:local="clr-namespace:ConfigGenerator"
         mc:Ignorable="d"
         Title="MainWindow" Height="350" Width="525">
-	<Grid>
-		<TextBox HorizontalAlignment="Left" Height="22" Margin="316,93,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="43" TextChanged="TextBox_TextChanged"/>
-		<Button Content="Сгенерировать!" HorizontalAlignment="Left" Margin="201,190,0,0" VerticalAlignment="Top" Width="107" Click="Button_Click"/>
-		<TextBlock HorizontalAlignment="Left" Margin="112,93,0,0" TextWrapping="Wrap" Text="Введите номер сектора" VerticalAlignment="Top"/>
+  <Window.Background>
+    <ImageBrush ImageSource="Resources/background4.jpg"></ImageBrush>
+  </Window.Background>
+  <Window.Resources>
+    <DropShadowEffect x:Key="thresholdEffect" Color="Gray" Opacity=".20" ShadowDepth="6" />
+    <Style TargetType="{x:Type Button}">
+      <Setter Property="Width" Value="72"/>
+      <Setter Property="Height" Value="22"/>
+      <Setter Property="FontFamily" Value="Calibri"/>
+      <Setter Property="FontSize" Value="12"/>
+      <Setter Property="Effect" Value="{StaticResource thresholdEffect}"/>
+      <Setter Property="FontSize" Value="12"/>
+      <Style.Triggers>
+        <Trigger Property="Button.IsMouseOver" Value="true">
+          <Setter Property="Foreground" Value="Gold"></Setter>
+        </Trigger>
+      </Style.Triggers>
+    </Style>
+  </Window.Resources>
+  <Grid>
+    <TextBox HorizontalAlignment="Left" Height="16" Margin="259,127,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="43" TextChanged="TextBox_TextChanged"/>
+    <Button Name="generateButton" Content="Сгенерировать!"  Margin="207,239,203,0" VerticalAlignment="Top" Width="107" Background="LightBlue" Opacity="0.7"
+             Click="GenerateConfigFiles"/>
+    <TextBlock HorizontalAlignment="Left" Margin="112,127,0,0" TextWrapping="Wrap" Text="Введите номер сектора" VerticalAlignment="Top"/>
+    <TextBlock HorizontalAlignment="Left" Margin="77,148,0,0" TextWrapping="Wrap" Text="Выберите ini file для парсинга" VerticalAlignment="Top"/>
 
-	</Grid>
+    <DockPanel Margin="36,10,10,10">
+      <WrapPanel HorizontalAlignment="Center" DockPanel.Dock="Right" Width="106" RenderTransformOrigin="0.483,0.516" >
+        <Button x:Name="btnOpenFile1" Click="OpenFile" Width="79" Background="LightBlue" Opacity="0.7" Content="Open file" Margin="0,55,0,0"/>
+      </WrapPanel>
+      <TextBox x:Name="openFileTextBox" Width="346" RenderTransformOrigin="0.287,-5.405" Margin="0,55,0,229" VerticalAlignment="Stretch" TextChanged="openFileTextBox1_TextChanged"/>
+    </DockPanel>
+  </Grid>
 </Window>
