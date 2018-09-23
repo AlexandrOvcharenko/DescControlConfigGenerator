@@ -43,3 +43,7 @@ C:\dev\WebDev\ConfigGenerator\ConfigGenerator\obj\Debug\ConfigGenerator.csproj.C
 C:\dev\WebDev\ConfigGenerator\ConfigGenerator\obj\Debug\ConfigGenerator.exe
 C:\dev\WebDev\ConfigGenerator\ConfigGenerator\obj\Debug\ConfigGenerator.pdb
 C:\dev\WebDev\ConfigGenerator\ConfigGenerator\bin\Debug\ConfigGenerator.pdb
+C:\dev\WebDev\DescControlConfigGenerator\ConfigGenerator\obj\Debug\MainWindow.g.cs
+C:\dev\WebDev\DescControlConfigGenerator\ConfigGenerator\obj\Debug\App.g.cs
+C:\dev\WebDev\DescControlConfigGenerator\ConfigGenerator\obj\Debug\ConfigGenerator_MarkupCompile.cache
+C:\dev\WebDev\DescControlConfigGenerator\ConfigGenerator\obj\Debug\ConfigGenerator_MarkupCompile.lref
